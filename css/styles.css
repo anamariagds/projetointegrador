@@ -1,0 +1,283 @@
+
+/*Resetcss remove espaçamento que já vem por padrão. margem e espaços*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #ffdbdb;
+  background-size: auto 100vh;
+  font-family: 'Overpass Mono', monospace;
+  height: 100vh;
+  font-size: 10px;
+   
+}
+/*Se a tela tiver pelo menos 400px vai carregar*/
+/*breaking point*/
+
+@media(min-width: 400px){
+  body{
+   font-size: 14px;  
+  }
+}
+
+@media(min-width: 600px){
+  body{
+   font-size: 18px;  
+  }
+}
+
+@media(min-width: 1200px){
+  body{
+   font-size: 20px;  
+
+  }
+}
+
+header{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu{
+  background-color: #f0b200;
+  -webkit-filter: opacity(0.85);
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 1;
+}
+.menu ul{
+  display: flex;
+  justify-content: space-around;
+}
+.menu li{
+  list-style: none;
+}
+
+a{
+  color: #78866b;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration:underline;
+}
+.menu a{
+  display: block;
+  padding: 10px 20px;
+  transition: background-color 1s, color 1s;
+}
+
+.menu a:hover{
+  background-color: #dcb6b6;
+  color: #ffdb58 ;
+}
+
+/*Nome na header abaixo da foto inicial*/
+/*.site-subtitle,
+/*.site-title{
+    /*filter: none;
+    /*color: #78866b;
+    /*text-align: left;
+    /*position: absolute;
+    /* top: 70%; */
+    /* left: 59%; */
+    /*transform: translate(5%, 83%);
+}*/
+.site-title{
+  font-size: 4em; 
+  font-family: 'Abril Fatface', cursive;
+  line-height: 2em;
+
+   filter: none;
+    color: #78866b;
+    text-align: left;
+    position: absolute;
+    /* top: 70%; */
+    /* left: 59%; */
+    transform: translate(5%, 32%);
+}
+@media(min-width: 400px){
+  .site-title{
+    font-family: 'Abril Fatface', cursive;
+    line-height: 2em;
+  }
+}
+
+.site-subtitle{
+  /*! font-style: italic; */
+  line-height: 1.5em;
+   
+    filter: none;
+    color: #78866b;
+    text-align: left;
+    position: absolute;
+    /* top: 70%; */
+    /* left: 59%; */
+    transform: translate(5%, 239%);
+}
+
+.sobre,
+.contato,
+.portfolio {
+  padding: 2em;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1200px){
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+
+  }
+}
+
+.capa {
+    background-color: #dcb6b6;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+   justify-content: center
+}
+
+.capa .avatar {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-62%, -107%)  ;
+ 
+    margin-left: 2em;
+    border-radius: 0%;
+    width: 278px;
+    height: 278px;
+}
+
+@media(min-width: 360px){
+  .capa .avatar {
+  
+    border-radius: 0%;
+    width: 180px;
+    height: 180px;
+  }
+
+}
+
+.sobre h2,
+.contato h2,
+.portfolio h2,
+.formulario h2{
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #f0b200;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+  text-align: center;
+
+}
+.sobre p {
+  color: #78866b ;  
+  text-indent: 4em;
+  margin-bottom: 1,4em;
+  text-align: justify;
+   
+}
+
+.portfolio .grid{
+  display: grid;
+  gap: 2em;
+  
+}
+
+@media(min-width: 560px){
+  .grid{
+    grid-template-columns: 240px 240px;
+  }
+  
+}
+
+@media(min-width: 800px){
+  .grid{
+    grid-template-columns: repeat(3,240px);
+    justify-content: center;
+    height: calc(100vh - 8em - 48px);
+  }
+  
+}
+@media(min-width: 1200px){
+  .grid{
+    grid-template-columns: repeat(4,240px);
+    justify-content: center;
+    
+  }
+  
+
+}
+
+.portfolio figure{
+  text-align: center;
+}
+
+.img-portfolio{
+  height: 240px;
+  width: 100%;
+  object-fit: unset;
+  transition: transform 500ms;
+}
+
+.img-portfolio:hover{
+  transform: scale(1.2);
+}
+
+.formulario{
+  position: relative;
+  top: 0px; 
+  left: 50px;
+  
+  margin: 15px 15px 15px; 
+  padding: 20px 20px;
+  width: 75%;
+}
+    
+
+.identificacao{        
+  width: 100%;
+  padding: 10px 5px 5px;   
+}
+
+input[type="text"] {
+  width: 101%;
+  margin: 8px 27px 23px 8px;
+  border-radius: 4px;
+}
+
+#mensagem{
+  margin: 3px 3px 0 10px;
+  padding: 20px 15px 30px; 
+}
+
+.contato .icons{
+  text-align: center;
+
+}
+
+.contato a{
+  color: #78866b;
+  font-size: 4em;
+  transition: text-shadow 1s;
+
+}
+
+.contato a:active,
+.contato a:hover{
+  text-decoration: none;
+  text-shadow: 0px 20px 60px #ffdb58;
+}
