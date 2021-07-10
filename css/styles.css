@@ -140,7 +140,7 @@ a:hover{
 }
 
 .capa {
-   
+    
     width: 100vw;
     height: 100vh;
 
@@ -188,14 +188,21 @@ a:hover{
   text-indent: 4em;
   margin-bottom: 1,4em;
   text-align: justify;
+  text-indent: 0px;
    
 }
+.sobre,
+.formulario{
+  background-color: #dcb6b6;
+}
+
 
 .portfolio .grid{
   display: grid;
   gap: 2em;
   
 }
+
 
 @media(min-width: 560px){
   .grid{
@@ -224,6 +231,7 @@ a:hover{
 
 .portfolio figure{
   text-align: center;
+  color: #78866b ;  
 }
 
 .img-portfolio{
@@ -240,13 +248,16 @@ a:hover{
 .formulario{
   position: relative;
   top: 0px; 
-  left: 50px;
+  left: 67px;
   
-  margin: 15px 15px 15px; 
+  margin: 15px 45px 35px; 
   padding: 20px 20px;
   width: 75%;
 }
-    
+
+.formulario label{
+  color: #78866b ;  
+}
 
 .identificacao{        
   width: 100%;
